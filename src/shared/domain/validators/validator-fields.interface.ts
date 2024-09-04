@@ -1,9 +1,9 @@
 export type FieldsErrors = {
-    [field:string]: Array<string>
+  [field: string]: Array<string>
 }
 
 export interface ValidatorFieldsInterface<PropsValidated> {
-    errors: FieldsErrors
-    validatedData: PropsValidated
-    validate(data: any): boolean 
+  errors: FieldsErrors
+  validatedData: PropsValidated
+  validate(data: any): boolean
 }
