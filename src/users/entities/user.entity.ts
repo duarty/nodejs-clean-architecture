@@ -20,7 +20,7 @@ export class UserEntity extends Entity<UserProps> {
     this.name = value
   }
 
-  updatePAssword(value: string): void {
+  updatePassword(value: string): void {
     this.password = value
   }
 
