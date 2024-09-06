@@ -21,7 +21,6 @@ describe('Abstract Entity unit tests', () => {
     const props = { prop1: 'value1', prop2: 15 }
     const id = '3e1a055e-7715-4ed5-b91a-a53f483265fb'
     const entity = new StubEntity(props, id)
-    console.log('entity', entity._id)
     expect(uuidValidate(entity._id)).toBeTruthy()
     expect(entity._id).toEqual(id)
   })
