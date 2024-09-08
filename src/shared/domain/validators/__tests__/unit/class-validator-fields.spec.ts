@@ -1,7 +1,9 @@
-import { ClassValidator } from '../../class-validator-fields'
+import { ClassValidatorFields } from '../../class-validator-fields'
 import * as libClassValidator from 'class-validator'
 
-class StubClassValidatorFields extends ClassValidator<{ field: string }> {}
+class StubClassValidatorFields extends ClassValidatorFields<{
+  field: string
+}> {}
 
 describe('ClassValidatorFields', () => {
   it('Should initialize erros and validateData variables with null', () => {
